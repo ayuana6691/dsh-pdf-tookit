@@ -1,0 +1,55 @@
+{
+  "name": "dsh-pdf-toolkit",
+  "version": "1.0.0",
+  "description": "通用 PDF 处理器：提取、编排、编辑、生成、渲染与校验，附带 Python 程序及技能。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "runner.js",
+    "cordis.patch.yml",
+    "python/*.py",
+    "python/requirements.txt",
+    "scripts/*.mjs",
+    "skills",
+    "test/*.mjs",
+    "test/*.py",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.1-rc.3 <0.3.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "test": "node test/run.mjs",
+    "test:host": "node test/host.mjs"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "pdf",
+    "pdf-toolkit",
+    "skills"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ayuana6691/dsh-pdf-tookit.git"
+  },
+  "homepage": "https://github.com/ayuana6691/dsh-pdf-tookit#readme",
+  "bugs": {
+    "url": "https://github.com/ayuana6691/dsh-pdf-tookit/issues"
+  },
+  "author": "ayuana6691"
+}

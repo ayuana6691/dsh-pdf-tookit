@@ -1,0 +1,9 @@
+- insert:
+    - id: dsh-pdf-toolkit
+      name: dsh-pdf-toolkit
+      inject:
+        - tools
+        - skills
+      config:
+        timeoutMs: 180000
+        maxOutputBytes: 8388608
